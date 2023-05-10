@@ -8,6 +8,11 @@ export const Banner = styled.main`
   background: url(${SpaceBackground}) no-repeat fixed 83%;
   background-size: cover;
   border-bottom: 2px solid #1fdf64;
+
+  @media (max-width: 500px) {
+    margin-top: 8rem;
+    padding: 2rem 4rem;
+  }
 `;
 
 export const WelcomeContainer = styled.span`
@@ -75,7 +80,7 @@ export const BannerTextContainer = styled.div`
 
   @media (max-width: 500px) {
     max-width: 1100px !important;
-    margin: 2rem auto;
+    margin: 2rem auto 0 auto;
     padding: 1rem 1.5rem;
   }
 `;
@@ -98,16 +103,17 @@ export const SocialMedia = styled.ul`
   margin-top: 2rem;
   cursor: pointer;
   position: fixed;
-  right: 4rem;
-  top: 8rem;
-  padding: 1rem;
+  right: 2rem;
+  top: 10rem;
+  padding: rem;
+  width: 45px;
   align-items: center;
   justify-content: center;
 
   @media (max-width: 500px) {
     right: 0;
     padding: 1rem 0.5rem 1rem 0;
-    top: 5.5rem;
+    top: 7.5rem;
   }
 `;
 
@@ -118,11 +124,4 @@ export const SocialMediaIcon = styled.li`
     color: #1fdf64 !important;
     transform: translate(-10px, 0px);
   }
-`;
-
-export const Line = styled.span`
-  writing-mode: vertical-rl;
-  font-weight: bolder;
-  color: #fff;
-  margin-left: 0.8rem;
 `;

@@ -2,6 +2,7 @@ import {
   Envelope,
   FacebookLogo,
   GithubLogo,
+  IconProps,
   InstagramLogo,
   LinkedinLogo,
   WhatsappLogo,
@@ -17,10 +18,25 @@ import {
   BannerTitleContrast,
   SocialMedia,
   SocialMediaIcon,
-  Line,
 } from "./Banner";
 
-export const Header = () => {
+interface ISocialMediaIConProps {
+  title: string;
+  icon: React.ForwardRefExoticComponent<
+    IconProps & React.RefAttributes<SVGSVGElement>
+  >;
+}
+
+export const Header: React.FC = () => {
+  const socialMedia: ISocialMediaIConProps[] = [
+    { title: "Facebook", icon: FacebookLogo },
+    { title: "Github", icon: GithubLogo },
+    { title: "Instagram", icon: InstagramLogo },
+    { title: "Linkedin", icon: LinkedinLogo },
+    { title: "Whatsapp", icon: WhatsappLogo },
+    { title: "Envelope", icon: Envelope },
+  ];
+
   return (
     <Banner>
       <WelcomeContainer>
@@ -48,27 +64,14 @@ export const Header = () => {
       </BannerTextContainer>
 
       <SocialMedia>
-        <SocialMediaIcon>
-          <FacebookLogo size={32} color="#fff" />
-        </SocialMediaIcon>
-        <SocialMediaIcon>
-          <InstagramLogo size={32} color="#fff" />
-        </SocialMediaIcon>
-        <SocialMediaIcon>
-          <LinkedinLogo size={32} color="#fff" />
-        </SocialMediaIcon>
-        <SocialMediaIcon>
-          <GithubLogo size={32} color="#fff" />
-        </SocialMediaIcon>
-        <SocialMediaIcon>
-          <WhatsappLogo size={32} color="#fff" />
-        </SocialMediaIcon>
-        <SocialMediaIcon>
-          <Envelope size={32} color="#fff" />
-        </SocialMediaIcon>
-        <SocialMediaIcon>
-          <Line>_________</Line>
-        </SocialMediaIcon>
+          {socialMedia.map((sm) => {
+            const IconComponent = sm.icon;
+            return (
+              <SocialMediaIcon>
+                <IconComponent key={sm.title} size={24} color="#fff" />
+              </SocialMediaIcon>
+            );
+          })}
       </SocialMedia>
     </Banner>
   );

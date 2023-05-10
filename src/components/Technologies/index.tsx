@@ -16,13 +16,14 @@ import {
   TechnologieTitle,
 } from "./Technologies";
 
-interface ITechnologies {
+interface ITechnologiesProps {
   title: string;
   icon: React.ReactNode;
 }
 
 export const Technologies: React.FC = () => {
-  const technologies: ITechnologies[] = [
+
+  const technologiesList: ITechnologiesProps[] = [
     { title: "Javascript", icon: <DiJavascript1 /> },
     { title: "React JS", icon: <FaReact /> },
     { title: "Node JS", icon: <SiNodedotjs /> },
@@ -39,9 +40,9 @@ export const Technologies: React.FC = () => {
     <TechnologiesContainer>
       <TechnologieTitle>Tecnologias</TechnologieTitle>
       <TechnologiesContent>
-        {technologies.map((technologie) => {
+        {technologiesList.map((technologie) => {
           return (
-            <Technologie key={technologie.title}>
+            <Technologie>
               {technologie.icon}
               {technologie.title}
             </Technologie>

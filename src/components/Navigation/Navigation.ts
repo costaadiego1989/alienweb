@@ -12,8 +12,12 @@ export const NavigationContainer = styled.header`
     justify-content: space-between;
     padding: 1rem;
     right: 0;
+    position: fixed;
+    margin-bottom: 4rem;
+    z-index: 999;
   }
 `;
+
 export const Logo = styled.div`
   cursor: pointer;
 `;
@@ -56,11 +60,12 @@ export const CVBtn = styled.div`
   @media (max-width: 500px) {
     padding: 0.5rem 0.75rem;
     text-align: center;
-    position: absolute;
+    position: fixed;
     border-radius: 0px;
     top: 5.5rem;
     left: 0;
     width: 100%;
+    z-index: 999;
   }
 
   &:hover {
