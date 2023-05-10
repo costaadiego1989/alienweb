@@ -10,8 +10,9 @@ export const NavigationContainer = styled.header`
 
   @media (max-width: 500px) {
     justify-content: space-between;
-    padding: 1rem;
+    padding: .5rem .5rem .3rem .75rem;
     right: 0;
+    left: 0;
     position: fixed;
     margin-bottom: 4rem;
     z-index: 999;
@@ -40,6 +41,11 @@ export const Link = styled.li`
   padding: 0.5rem 0;
   border-bottom: 2px solid transparent;
 
+  @media (max-width: 500px) {
+    display: grid;
+    flex-direction: column !important;
+  }
+
   &:hover {
     border-bottom: 2px solid rgb(5, 50, 32);
   }
@@ -62,7 +68,7 @@ export const CVBtn = styled.div`
     text-align: center;
     position: fixed;
     border-radius: 0px;
-    top: 5.5rem;
+    top: 3.8rem;
     left: 0;
     width: 100%;
     z-index: 999;

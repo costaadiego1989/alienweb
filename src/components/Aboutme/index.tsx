@@ -18,7 +18,7 @@ export const Aboutme = () => {
 
           <AboutmeText>
 
-            <AboutmeTitle>About me</AboutmeTitle>
+            <AboutmeTitle>Quem sou</AboutmeTitle>
 
             <p>
               Olá, sou um desenvolvedor Full Stack apaixonado por tecnologia,

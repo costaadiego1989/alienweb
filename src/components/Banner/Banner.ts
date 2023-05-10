@@ -10,7 +10,7 @@ export const Banner = styled.main`
   border-bottom: 2px solid #1fdf64;
 
   @media (max-width: 500px) {
-    margin-top: 8rem;
+    margin-top: 6.3rem;
     padding: 2rem 4rem;
   }
 `;

@@ -34,7 +34,7 @@ export const AboutmeTextContainer = styled.div`
   @media (max-width: 500px) {
     max-width: 68vw !important;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
   }
 `;
 
