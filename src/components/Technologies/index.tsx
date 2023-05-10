@@ -1,12 +1,12 @@
 import { FaReact } from "react-icons/fa";
 import { FaAws } from "react-icons/fa";
+import { FaVuejs } from "react-icons/fa";
 import { SiNodedotjs } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
-import { FaVuejs } from "react-icons/fa";
-import { GrMysql } from "react-icons/gr";
 import { DiJavascript1 } from "react-icons/di";
 import { DiDocker } from "react-icons/di";
+import { GrMysql } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 
 import {
@@ -40,7 +40,7 @@ export const Technologies: React.FC = () => {
     <TechnologiesContainer>
       <TechnologieTitle>Tecnologias</TechnologieTitle>
       <TechnologiesContent>
-        {technologiesList.map((technologie) => {
+        {technologiesList.map((technologie: ITechnologiesProps): React.ReactElement => {
           return (
             <Technologie>
               {technologie.icon}

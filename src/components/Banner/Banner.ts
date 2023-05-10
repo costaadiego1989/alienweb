@@ -113,12 +113,14 @@ export const SocialMedia = styled.ul`
   @media (max-width: 500px) {
     right: 0;
     padding: 1rem 0.5rem 1rem 0;
-    top: 7.5rem;
+    top: 7rem;
   }
 `;
 
 export const SocialMediaIcon = styled.li`
   transition: 0.5s;
+  color: #fff;
+  font-size: 2rem;
 
   &:hover {
     color: #1fdf64 !important;

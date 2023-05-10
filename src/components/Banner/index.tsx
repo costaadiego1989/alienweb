@@ -22,19 +22,18 @@ import {
 
 interface ISocialMediaIConProps {
   title: string;
-  icon: React.ForwardRefExoticComponent<
-    IconProps & React.RefAttributes<SVGSVGElement>
-  >;
+  icon: React.ReactNode;
 }
 
 export const Header: React.FC = () => {
+
   const socialMedia: ISocialMediaIConProps[] = [
-    { title: "Facebook", icon: FacebookLogo },
-    { title: "Github", icon: GithubLogo },
-    { title: "Instagram", icon: InstagramLogo },
-    { title: "Linkedin", icon: LinkedinLogo },
-    { title: "Whatsapp", icon: WhatsappLogo },
-    { title: "Envelope", icon: Envelope },
+    { title: "Facebook", icon: <FacebookLogo /> },
+    { title: "Github", icon: <GithubLogo /> },
+    { title: "Instagram", icon: <InstagramLogo /> },
+    { title: "Linkedin", icon: <LinkedinLogo /> },
+    { title: "Whatsapp", icon: <WhatsappLogo /> },
+    { title: "Envelope", icon: <Envelope /> },
   ];
 
   return (
@@ -64,11 +63,10 @@ export const Header: React.FC = () => {
       </BannerTextContainer>
 
       <SocialMedia>
-          {socialMedia.map((sm) => {
-            const IconComponent = sm.icon;
+          {socialMedia.map((sm: ISocialMediaIConProps): React.ReactElement => {
             return (
-              <SocialMediaIcon>
-                <IconComponent key={sm.title} size={24} color="#fff" />
+              <SocialMediaIcon key={sm.title}>
+                {sm.icon}
               </SocialMediaIcon>
             );
           })}
