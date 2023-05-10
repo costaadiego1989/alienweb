@@ -9,12 +9,11 @@ export const NavigationContainer = styled.header`
   border-bottom: 2px solid #063823;
 
   @media (max-width: 500px) {
+    width: 100vw;
+    overflow: hidden;
     justify-content: space-between;
     padding: .5rem .5rem .3rem .75rem;
-    right: 0;
-    left: 0;
     position: fixed;
-    margin-bottom: 4rem;
     z-index: 999;
   }
 `;
@@ -22,6 +21,7 @@ export const NavigationContainer = styled.header`
 export const Logo = styled.div`
   cursor: pointer;
 `;
+
 export const Menu = styled.ul`
   display: flex;
   align-items: center;
@@ -29,7 +29,6 @@ export const Menu = styled.ul`
   cursor: pointer;
 
   @media (max-width: 500px) {
-    display: flex;
     text-align: right;
     gap: .5rem;
     justify-items: flex-end;
@@ -38,12 +37,15 @@ export const Menu = styled.ul`
 
 export const Link = styled.li`
   transition: 0.5s;
+  font-size: 1.5rem;
   padding: 0.5rem 0;
   border-bottom: 2px solid transparent;
 
   @media (max-width: 500px) {
-    display: grid;
+    display: flex;
     flex-direction: column !important;
+    font-size: 1rem;
+    line-height: 0.8;
   }
 
   &:hover {
@@ -62,6 +64,7 @@ export const CVBtn = styled.div`
   justify-content: center;
   color: #fff;
   transition: 0.5s;
+  font-size: 1.5rem;
 
   @media (max-width: 500px) {
     padding: 0.5rem 0.75rem;
@@ -72,6 +75,7 @@ export const CVBtn = styled.div`
     left: 0;
     width: 100%;
     z-index: 999;
+    font-size: 1rem;
   }
 
   &:hover {

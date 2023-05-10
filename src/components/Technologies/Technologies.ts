@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TechnologiesContainer = styled.main`
+export const TechnologiesContainer = styled.section`
     width: 100vw;
     background-color: #1B1B1B;
     padding-bottom: 4rem;

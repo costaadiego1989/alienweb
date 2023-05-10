@@ -11,7 +11,7 @@ export const Banner = styled.main`
 
   @media (max-width: 500px) {
     margin-top: 6.3rem;
-    padding: 2rem 4rem;
+    padding: 2rem;
   }
 `;
 
@@ -26,6 +26,10 @@ export const WelcomeContainer = styled.span`
   font-size: 1rem;
   max-width: 23rem;
   color: #1b1b1b;
+
+  @media (max-width: 500px) {
+    margin-top: 1.5rem;
+  }
 `;
 
 export const Welcome = styled.span`
@@ -70,6 +74,13 @@ export const BannerTitleContrast = styled.span`
   color: #f7d213;
 `;
 
+export const TextAndSocialsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+`;
+
 export const BannerTextContainer = styled.div`
   padding: 2rem;
   background-color: rgba(5, 50, 32, 0.75);
@@ -98,22 +109,19 @@ export const BannerText = styled.p`
 
 export const SocialMedia = styled.ul`
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 2rem;
-  cursor: pointer;
-  position: fixed;
-  right: 2rem;
-  top: 10rem;
-  padding: rem;
-  width: 45px;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  gap: 2.5rem;
+  padding-top: .65rem;
+  background-color: #063823;
+  z-index: 999;
 
   @media (max-width: 500px) {
-    right: 0;
-    padding: 1rem 0.5rem 1rem 0;
-    top: 7rem;
+    gap: 1.5rem;
   }
 `;
 
@@ -121,9 +129,10 @@ export const SocialMediaIcon = styled.li`
   transition: 0.5s;
   color: #fff;
   font-size: 2rem;
+  cursor: pointer;
 
   &:hover {
     color: #1fdf64 !important;
-    transform: translate(-10px, 0px);
+    transform: translate(0px, -10px);
   }
 `;

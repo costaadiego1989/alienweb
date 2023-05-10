@@ -8,6 +8,10 @@ export const AboutmeContainer = styled.section`
   display: flex;
   padding: 4rem;
   z-index: -2;
+
+  @media (max-width: 500px) {
+    padding: 2rem;
+  }
 `;
 
 export const AboutmeContent = styled.div`
@@ -16,7 +20,7 @@ export const AboutmeContent = styled.div`
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 auto 4rem auto;
   overflow: hidden;
 
   @media (max-width: 500px) {
@@ -28,25 +32,25 @@ export const AboutmeContent = styled.div`
 export const AboutmeTextContainer = styled.div`
   padding: 2rem;
   background-color: rgba(5, 50, 32, 0.75);
-  border-radius: .7rem;
-  width: 80vw;
+  border-radius: 1rem;
+  width: fit-content;
+  max-width: 100vw;
 
   @media (max-width: 500px) {
-    max-width: 68vw !important;
-    margin: 2rem auto;
+    max-width: 100vw;
+    margin: 2rem auto 0 auto;
     padding: 1rem 1.5rem;
   }
 `;
 
-export const AboutmeText = styled.div`
+export const AboutmeText = styled.p`
   color: #d1d1d1;
-  line-height: 1.6;
   font-size: 1.2rem;
+  line-height: 1.6;
 
-  
   @media (max-width: 500px) {
-    line-height: 1.3;
     font-size: 1rem;
+    line-height: 1.3;
   }
 `;
 
@@ -56,7 +60,8 @@ export const AboutmeTitle = styled.h3`
 
 export const AboutmeImageContainer = styled.div`
   display: flex;
-  height: 87.75%;
+  width: 70%;
+  height: auto;
   border-radius: 0.7rem;
   background-image: cover;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 0 100%);

@@ -14,6 +14,7 @@ import {
   BannerTitle,
   Saudation,
   BannerTextContainer,
+  TextAndSocialsContainer,
   BannerText,
   BannerTitleContrast,
   SocialMedia,
@@ -49,6 +50,7 @@ export const Header: React.FC = () => {
         constante <BannerTitleContrast>metamorfose</BannerTitleContrast>.
       </BannerTitle>
 
+      <TextAndSocialsContainer>
       <BannerTextContainer>
         <BannerText>
           <p>
@@ -71,6 +73,7 @@ export const Header: React.FC = () => {
             );
           })}
       </SocialMedia>
+      </TextAndSocialsContainer>
     </Banner>
   );
 };
