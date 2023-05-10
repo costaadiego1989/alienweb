@@ -1,12 +1,9 @@
-
-import { Navigation } from "./components/Navigation";
-import { Header } from "./components/Banner";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
     <>
-      <Navigation />
-      <Header />
+      <Home />
     </>
   );
 }

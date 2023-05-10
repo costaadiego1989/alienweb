@@ -3,8 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "exospace";
+  font-family: Exospace;
   src: url("./assets/fonts/exospace.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Youthanasia;
+  src: url("./assets/fonts/youthanasia.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SFMono;
+  src: url("./assets/fonts/sfmono.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Dreams;
+  src: url("./assets/fonts/dreams.ttf") format("truetype");
 }
 
 * {
@@ -12,4 +27,34 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: Exospace;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h3 {
+  font-family: Youthanasia;
+  display: inline-block;
+}
+
+p {
+  font-family: Exospace;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #063823; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1fdf64; 
 }
