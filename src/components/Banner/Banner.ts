@@ -24,8 +24,7 @@ export const WelcomeContainer = styled.span`
   gap: 0.85rem;
   border-radius: 0.5rem;
   font-size: 1rem;
-  max-width: 23rem;
-  color: #1b1b1b;
+  max-width: 23.5rem;
 
   @media (max-width: 500px) {
     margin-top: 1.5rem;
@@ -64,9 +63,11 @@ export const BannerTitle = styled.h2`
 
 export const Saudation = styled.h3`
   font-size: 1.75rem;
+  color: #000 !important;
+  padding: 0 .5rem 0 0;
 
   @media (max-width: 500px) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 `;
 

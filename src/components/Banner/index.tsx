@@ -40,14 +40,14 @@ export const Header: React.FC = () => {
   return (
     <Banner>
       <WelcomeContainer>
-        <Welcome>👽</Welcome>
-        <Saudation>SAUDAÇÕES HUMANO... EU DIEGO COSTA!</Saudation>
+        <Welcome>✌️</Welcome>
+        <Saudation>SAUDAÇÕES HUMANO! ME CHAMO DIEGO COSTA.</Saudation>
       </WelcomeContainer>
 
       <BannerTitle>
-        Um desenvolvedor <BannerTitleContrast>full stack</BannerTitleContrast>{" "}
-        em constante <BannerTitleContrast>aprendizado</BannerTitleContrast> e
-        constante <BannerTitleContrast>metamorfose</BannerTitleContrast>.
+        Sou o CTO da <BannerTitleContrast>Alienweb</BannerTitleContrast>{" "}
+        estamos em constante <BannerTitleContrast>aprendizado</BannerTitleContrast>{" "}
+        e <BannerTitleContrast>metamorfose</BannerTitleContrast>.
       </BannerTitle>
 
       <TextAndSocialsContainer>

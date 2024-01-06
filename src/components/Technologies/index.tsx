@@ -29,7 +29,7 @@ export const Technologies: React.FC = () => {
     { title: "Node JS", icon: <SiNodedotjs /> },
     { title: "Typescript", icon: <SiTypescript /> },
     { title: "Github", icon: <FiGithub /> },
-    { title: "Mongo DB", icon: <SiMongodb /> },
+    { title: "MongoDB", icon: <SiMongodb /> },
     { title: "MySQL", icon: <GrMysql /> },
     { title: "AWS", icon: <FaAws /> },
     { title: "Docker", icon: <DiDocker /> },
