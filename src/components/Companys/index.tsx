@@ -19,7 +19,7 @@ export const Companys: React.FC = () => {
 
     const mobileSettings = {
         ...settings,
-        slidesToShow: 2
+        slidesToShow: 2,
     };
 
     return (<>
@@ -28,19 +28,18 @@ export const Companys: React.FC = () => {
             {window.innerWidth > 500 ? <Slider {...settings}>
                 {logos.map((logo) => (
                     <div key={logo.id}>
-                        <img src={logo.imageUrl} alt="Logo do Cliente" />
+                        <img src={logo.imageUrl} alt={logo.name} />
                     </div>
                 ))}
             </Slider>
                 :
-                <Slider {...mobileSettings}>
-                    {logos.map((logo) => (
-                        <div key={logo.id}>
-                            <img src={logo.imageUrl} alt="Logo do Cliente" />
-                        </div>
-                    ))}
-                </Slider>
-
+            <Slider {...mobileSettings}>
+                {logos.map((logo) => (
+                    <div key={logo.id}>
+                        <img src={logo.imageUrl} alt={logo.name} />
+                    </div>
+                ))}
+            </Slider>
             }
         </CompanyContainer>
     </>);

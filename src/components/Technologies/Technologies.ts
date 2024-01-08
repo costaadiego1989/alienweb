@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const TechnologiesContainer = styled.section`
     width: 100vw;
     background-color: #1B1B1B;
-    padding-bottom: 4rem;
+    padding: 4rem 0;
+    border-bottom: 2px solid #1fdf64;
 `;
 
 export const TechnologiesContent = styled.ul`
@@ -26,8 +27,8 @@ export const TechnologieTitle = styled.h3`
     color: #9d9d9d;
     display: flex !important;
     justify-content: center !important;
-    padding: 4rem;
     font-size: 2.5rem;
+    padding-bottom: 4rem;
 `;
 
 export const Technologie = styled.li`

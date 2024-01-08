@@ -35,7 +35,7 @@ export const CompanyContainer = styled.section`
 
     @media (max-width: 500px) {
         img {
-            max-width: 100px;
+            max-width: 200px;
         }
   }
 `;
