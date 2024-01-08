@@ -7,6 +7,11 @@ export const ContactContainer = styled.section`
 
     h3 {
         font-size: 4rem;
+
+      @media (max-width: 500px) {
+        font-size: 2rem;
+        text-align: left;
+      }
     }
 
     h5 {
@@ -36,6 +41,12 @@ export const RightContent = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 500px) {
+      padding: 2rem 2rem 4rem 2rem;
+      font-size: 2rem;
+      text-align: left;
+    }
 
     a {
         text-decoration: none;

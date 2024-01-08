@@ -1,7 +1,9 @@
-import { NavigationContainer, Logo, Menu, CVBtn, Link } from "./Navigation";
+import { NavigationContainer, Logo, Menu, CVBtn, Link as Linked } from "./Navigation";
 import { Download, FinnTheHuman } from "phosphor-react";
 
 import pdfFile from '../../assets/archieves/cv_diego_costa.pdf'
+
+import { Link } from 'react-scroll';
 
 interface IMenuItensProps {
   index: string;
@@ -12,10 +14,10 @@ interface IMenuItensProps {
 export const Navigation: React.FC = () => {
 
   const menuItens: IMenuItensProps[] = [
-    { index: "1", title: "Sobre", url: '#about' },
-    { index: "3", title: "Portfólio", url: '#portfolio' },
-    { index: "2", title: "Experiência", url: '#experiency' },
-    { index: "4", title: "Contato", url: '#contact' },
+    { index: "1", title: "Sobre", url: 'about' },
+    { index: "3", title: "Portfólio", url: 'portfolio' },
+    { index: "2", title: "Experiência", url: 'experiency' },
+    { index: "4", title: "Contato", url: 'contact' },
   ];
 
   const handleCVDonwload = () => {
@@ -33,15 +35,24 @@ export const Navigation: React.FC = () => {
       <nav>
         <Menu>
           {menuItens.map(menuItem => {
-            return(<>
-              <Link>{menuItem.index}. {menuItem.title}</Link>
+            return (<>
+              <Link
+                activeClass="active"
+                to={menuItem.url}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <Linked>{menuItem.index}. {menuItem.title}</Linked>
+              </Link>
             </>)
           })}
-          <li onClick={handleCVDonwload}>
-            <CVBtn><Download color="#fff" size={20}></Download>Meu CV</CVBtn>
-          </li>
-        </Menu>
-      </nav>
-    </NavigationContainer>
+        <li onClick={handleCVDonwload}>
+          <CVBtn><Download color="#fff" size={20}></Download>Meu CV</CVBtn>
+        </li>
+      </Menu>
+    </nav>
+    </NavigationContainer >
   );
 };

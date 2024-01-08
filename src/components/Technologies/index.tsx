@@ -37,7 +37,7 @@ export const Technologies: React.FC = () => {
   ];
 
   return (
-    <TechnologiesContainer>
+    <TechnologiesContainer className="experiency">
       <TechnologieTitle>Tecnologias</TechnologieTitle>
       <TechnologiesContent>
         {technologiesList.map((technologie: ITechnologiesProps): React.ReactElement => {

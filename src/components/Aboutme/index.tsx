@@ -10,7 +10,7 @@ import AboutmePhoto from "../../assets/images/aboutme.png";
 
 export const Aboutme = () => {
   return (
-    <AboutmeContainer>
+    <AboutmeContainer className="about">
 
       <AboutmeContent>
 

@@ -5,7 +5,7 @@ import { Buildings, Globe, } from "phosphor-react";
 
 export const Projects: React.FC = () => {
     return (<>
-        <ProjectsContainer>
+        <ProjectsContainer className='portfolio'>
             <ProjectTitle>Projetos</ProjectTitle>
             <ProjectsContentContainer>
                 <ProjectContainer>
