@@ -23,17 +23,17 @@ import {
 interface ISocialMediaIConProps {
   title: string;
   icon: React.ReactNode;
+  url: string;
 }
 
 export const Header: React.FC = () => {
 
   const socialMedia: ISocialMediaIConProps[] = [
-    { title: "Facebook", icon: <FacebookLogo /> },
-    { title: "Github", icon: <GithubLogo /> },
-    { title: "Instagram", icon: <InstagramLogo /> },
-    { title: "Linkedin", icon: <LinkedinLogo /> },
-    { title: "Whatsapp", icon: <WhatsappLogo /> },
-    { title: "Envelope", icon: <Envelope /> },
+    { title: "Github", icon: <GithubLogo />, url: 'https://' },
+    { title: "Instagram", icon: <InstagramLogo />, url: 'https://' },
+    { title: "Linkedin", icon: <LinkedinLogo />, url: 'https://' },
+    { title: "Whatsapp", icon: <WhatsappLogo />, url: 'https://' },
+    { title: "Envelope", icon: <Envelope />, url: 'mailto:agenciaalienweb@gmail.com' },
   ];
 
   return (

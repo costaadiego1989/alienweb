@@ -121,7 +121,8 @@ export const SocialMedia = styled.ul`
   left: 0;
   gap: 2.5rem;
   padding-top: .65rem;
-  background-color: #063823;
+  border-top: 2px solid #1fdf64;
+  background-color: #1b1b1b;
   z-index: 999;
 
   @media (max-width: 500px) {
