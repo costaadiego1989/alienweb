@@ -1,33 +1,34 @@
-import { ProjectsContainer, ProjectsContentContainer, Project } from './Project'
-
-interface IProjects {
-    company: String;
-    imageUrl: String;
-    title: String;
-}
-
-const projects: IProjects[] = [
-    {
-        company: "Empresa 1",
-        imageUrl: "htp://#",
-        title: "Título 1",
-    }
-]
+import { ProjectsContainer, ProjectsContentContainer, ProjectTitle, ProjectContainer, Project, CallToAction } from './Project'
+import { projects } from './mock';
+import { Buildings, Globe, } from "phosphor-react";
 
 export const Projects: React.FC = () => {
     return (<>
         <ProjectsContainer>
+            <ProjectTitle>Projetos</ProjectTitle>
             <ProjectsContentContainer>
-                { projects.map((project) => {
-                    return(<>
-                        <Project>
-                            {project.imageUrl}
-                            {project.title}
-                            {project.company}
-                        </Project>
-                    </>)
-                }) }
+                <ProjectContainer>
+                    {projects.map((project) => {
+                        return (<>
+                            <Project>
+                                <img src={project.imageUrl} alt={project.title} />
+                                <h3>
+                                    <Globe size={24} />
+                                    {project.title}</h3>
+                                <h5>
+                                    <Buildings size={24} />
+                                    {project.company}
+                                </h5>
+                            </Project>
+                        </>)
+                    })}
+                </ProjectContainer>
             </ProjectsContentContainer>
+            <CallToAction>
+                <h3>Seu projeto merece estar aqui como case de sucesso!</h3>
+                <button>Quero me tornar cliente!</button>
+                <span>☝️</span>
+            </CallToAction>
         </ProjectsContainer>
     </>);
 }

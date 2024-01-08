@@ -30,7 +30,6 @@ export const TechnologieTitle = styled.h3`
     font-size: 2.5rem;
 `;
 
-
 export const Technologie = styled.li`
     list-style: none;
     color: #9d9d9d;

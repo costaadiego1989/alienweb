@@ -2,7 +2,6 @@ import {
   Envelope,
   FacebookLogo,
   GithubLogo,
-  IconProps,
   InstagramLogo,
   LinkedinLogo,
   WhatsappLogo,
