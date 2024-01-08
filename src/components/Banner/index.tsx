@@ -29,10 +29,9 @@ interface ISocialMediaIConProps {
 export const Header: React.FC = () => {
 
   const socialMedia: ISocialMediaIConProps[] = [
-    { title: "Github", icon: <GithubLogo />, url: 'https://' },
-    { title: "Instagram", icon: <InstagramLogo />, url: 'https://' },
-    { title: "Linkedin", icon: <LinkedinLogo />, url: 'https://' },
-    { title: "Whatsapp", icon: <WhatsappLogo />, url: 'https://' },
+    { title: "Github", icon: <GithubLogo />, url: 'https://github.com/costaadiego1989' },
+    { title: "Linkedin", icon: <LinkedinLogo />, url: 'https://linkedin.com/in/costaadiego' },
+    { title: "Whatsapp", icon: <WhatsappLogo />, url: 'https://wa.me/5521993001883' },
     { title: "Envelope", icon: <Envelope />, url: 'mailto:agenciaalienweb@gmail.com' },
   ];
 
@@ -67,7 +66,7 @@ export const Header: React.FC = () => {
           {socialMedia.map((sm: ISocialMediaIConProps): React.ReactElement => {
             return (
               <SocialMediaIcon key={sm.title}>
-                {sm.icon}
+                <a href={sm.url} target="_blank">{sm.icon}</a>
               </SocialMediaIcon>
             );
           })}

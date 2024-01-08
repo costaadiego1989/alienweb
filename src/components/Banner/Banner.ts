@@ -125,6 +125,15 @@ export const SocialMedia = styled.ul`
   background-color: #1b1b1b;
   z-index: 999;
 
+  a {
+    color: #f9f9f9;
+    transition: .5s;
+
+    :hover {
+      color: #1fdf64;
+    }
+  }
+
   @media (max-width: 500px) {
     gap: 1.5rem;
   }

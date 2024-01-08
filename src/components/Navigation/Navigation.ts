@@ -55,14 +55,14 @@ export const Link = styled.li`
 
 export const CVBtn = styled.div`
   border: 2px solid transparent;
-  background-color: #272727;
+  background-color: #1b1b1b;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   display: flex;
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #f9f9f9;
   transition: 0.5s;
   font-size: 1.5rem;
 

@@ -2,7 +2,7 @@ import { ClickHere, ContactContainer, ContactContentContainer, LeftContent, Righ
 
 export const Contact: React.FC = () => {
     return (<>
-        <ContactContainer>
+        <ContactContainer className="contact">
             <ContactContentContainer>
                 <LeftContent>
                     <h3>Fale conosco</h3>
