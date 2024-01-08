@@ -7,7 +7,7 @@ export const TechnologiesContainer = styled.section`
 `;
 
 export const TechnologiesContent = styled.ul`
-    max-width: 70vw;
+    max-width: 80vw;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(5, 1fr);

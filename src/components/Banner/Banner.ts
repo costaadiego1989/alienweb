@@ -33,11 +33,14 @@ export const WelcomeContainer = styled.span`
 
 export const Welcome = styled.span`
   @keyframes toLeft {
-    from {
-      left: 0px;
+    0% {
+      transform: translateX(0);
     }
-    to {
-      left: 10px;
+    50% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 
