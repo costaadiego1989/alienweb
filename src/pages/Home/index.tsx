@@ -11,11 +11,11 @@ export const Home = () => {
     <>
       <Navigation />
       <Header />
-      <Technologies />
+      <Services />
       <Aboutme />
       <Projects />
       <Companys />
-      <Services />
+      <Technologies />
     </>
   );
 };

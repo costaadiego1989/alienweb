@@ -45,7 +45,7 @@ export const Header: React.FC = () => {
 
       <BannerTitle>
         Sou o CTO da <BannerTitleContrast>Alienweb</BannerTitleContrast>{" "}
-        estamos em constante <BannerTitleContrast>aprendizado</BannerTitleContrast>{" "}
+        estou em constante <BannerTitleContrast>aprendizado</BannerTitleContrast>{" "}
         e <BannerTitleContrast>metamorfose</BannerTitleContrast>.
       </BannerTitle>
 
@@ -53,7 +53,7 @@ export const Header: React.FC = () => {
       <BannerTextContainer>
         <BannerText>
           <p>
-            Sou um alienígena que viaja pelo espaço em busca de novas aventuras
+            Sou um ser viajante que navega pelo espaço em busca de novas aventuras
             e desafios. Meus conhecimentos como desenvolvedor Full Stack React e
             Node.js com TypeScript são minhas principais ferramentas nesta
             jornada. Aqui você poderá conhecer sobre mim e meus projetos

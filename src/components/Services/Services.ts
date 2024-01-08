@@ -27,14 +27,15 @@ export const ServicesContainer = styled.section`
 `;
 
 export const ServicesContentContainer = styled.ul`
-    max-width: 80vw;
+    max-width: 90vw;
     display: grid;
-    gap: 2rem 1.5rem;
+    gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
     background-color: #1fdf64 !important;
     margin: 0 auto;
     border-radius: 0.5rem;
     padding: 2rem;
+    margin-bottom: 4rem;
 
     @media (max-width: 500px) {
         grid-template-columns: repeat(2, 1fr);
@@ -49,8 +50,18 @@ export const Service = styled.li`
     font-size: 4rem;
     color: #063823;
 
+            
+    @media (max-width: 500px) {
+        font-size: 2.5rem;
+    }
+
     h3 {
         margin-bottom: 1rem;
+        
+        @media (max-width: 500px) {
+            font-size: 1.25rem;
+            text-align: left;
+        }
     }
 
     h5 {

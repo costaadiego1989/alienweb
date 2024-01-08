@@ -1,4 +1,5 @@
-import { ProjectsContainer, ProjectsContentContainer, ProjectTitle, ProjectContainer, Project, CallToAction } from './Project'
+import { CallToAction } from '../CallToAction';
+import { ProjectsContainer, ProjectsContentContainer, ProjectTitle, ProjectContainer, Project } from './Project'
 import { projects } from './mock';
 import { Buildings, Globe, } from "phosphor-react";
 
@@ -24,11 +25,7 @@ export const Projects: React.FC = () => {
                     })}
                 </ProjectContainer>
             </ProjectsContentContainer>
-            <CallToAction>
-                <h3>Seu projeto merece estar aqui como case de sucesso!</h3>
-                <button>Quero me tornar cliente!</button>
-                <span>☝️</span>
-            </CallToAction>
+            <CallToAction />
         </ProjectsContainer>
     </>);
 }
