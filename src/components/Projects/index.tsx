@@ -25,7 +25,7 @@ export const Projects: React.FC = () => {
                     })}
                 </ProjectContainer>
             </ProjectsContentContainer>
-            <CallToAction />
+            <CallToAction title="Você merece estar em nosso case de sucesso" button="Vamos bater um papo!"  />
         </ProjectsContainer>
     </>);
 }

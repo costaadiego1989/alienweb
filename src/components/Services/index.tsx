@@ -2,8 +2,6 @@ import { CallToAction } from '../CallToAction';
 import { Service, ServiceTitle, ServicesContainer, ServicesContentContainer } from './Services'
 import { ServicesList } from './mock';
 
-import { IconType } from 'react-icons/lib';
-
 export const Services: React.FC = () => {
     return (<>
         <ServicesContainer>
@@ -19,7 +17,7 @@ export const Services: React.FC = () => {
                 </>);
               })}  
             </ServicesContentContainer>
-            <CallToAction />
+            <CallToAction title="Vamos conhecer um pouco mais sobre nosso serviços" button="Vamos bater um papo!" />
         </ServicesContainer>
     </>)
 }

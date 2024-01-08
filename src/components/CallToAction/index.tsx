@@ -1,10 +1,15 @@
 import { CallToActionContent } from './CallToAction'
 
-export const CallToAction: React.FC = () => {
+interface ICallToAction {
+    title: string;
+    button: string;
+}
+
+export const CallToAction: React.FC<ICallToAction> = ({ title, button }) => {
     return (<>
         <CallToActionContent>
-            <h2>Seu projeto merece estar aqui como case de sucesso!</h2>
-            <button>Quero me tornar cliente!</button>
+            <h2>{title}</h2>
+            <button>{button}</button>
             <span>☝️</span>
         </CallToActionContent>
     </>);
