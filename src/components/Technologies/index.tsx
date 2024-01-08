@@ -26,6 +26,7 @@ export const Technologies: React.FC = () => {
   const technologiesList: ITechnologiesProps[] = [
     { title: "Javascript", icon: <DiJavascript1 /> },
     { title: "React JS", icon: <FaReact /> },
+    { title: "Vue JS", icon: <FaVuejs /> },
     { title: "Node JS", icon: <SiNodedotjs /> },
     { title: "Typescript", icon: <SiTypescript /> },
     { title: "Github", icon: <FiGithub /> },
@@ -33,7 +34,6 @@ export const Technologies: React.FC = () => {
     { title: "MySQL", icon: <GrMysql /> },
     { title: "AWS", icon: <FaAws /> },
     { title: "Docker", icon: <DiDocker /> },
-    { title: "Vue JS", icon: <FaVuejs /> },
   ];
 
   return (

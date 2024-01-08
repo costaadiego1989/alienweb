@@ -4,6 +4,7 @@ export const ProjectsContainer = styled.section`
     width: 100vw;
     background-color: #1B1B1B;
     padding-bottom: 4rem;
+    border-top: 2px solid #1fdf64;
 `;
 
 export const ProjectsContentContainer = styled.section`
@@ -43,6 +44,7 @@ export const ProjectContainer = styled.ul`
 
 export const Project = styled.li`
     background-color: #1fdf64 !important;
+    border: 3px solid #1fdf64;
     border-radius: 0.5rem;
     transition: .5s;
     cursor: pointer;
