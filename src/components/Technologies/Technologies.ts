@@ -18,6 +18,7 @@ export const TechnologiesContent = styled.ul`
     padding: 2rem;
 
     @media (max-width: 500px) {
+        max-width: 80vw;
         grid-template-columns: repeat(2, 1fr);
         padding: 1rem;
     }
