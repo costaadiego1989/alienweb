@@ -23,7 +23,7 @@ export const projects: IProjects[] = [
     {
         company: 'Sisgpru',
         imageUrl: sisgpru,
-        title: 'Sistema pronto atendimento Sisgpru',
+        title: 'Sis. Pronto Atendimento Sisgpru',
     },
     {
         company: 'Escola Embaot',
