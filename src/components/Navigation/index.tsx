@@ -4,6 +4,7 @@ import { Download, FinnTheHuman } from "phosphor-react";
 import pdfFile from '../../assets/archieves/cv_diego_costa.pdf'
 
 import { Link } from 'react-scroll';
+import { useEffect } from "react";
 
 interface IMenuItensProps {
   index: string;
@@ -27,8 +28,28 @@ export const Navigation: React.FC = () => {
     link.click();
   };
 
+  useEffect(() => {
+    const header = document.querySelector('.header');
+
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        header?.classList.add('sticky');
+        console.log(header);
+        
+      } else {
+        header?.classList.remove('sticky');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <NavigationContainer>
+    <NavigationContainer id="header">
       <Logo>
         <FinnTheHuman size={46} color="#053220" />
       </Logo>

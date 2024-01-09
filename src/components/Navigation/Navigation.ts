@@ -7,6 +7,14 @@ export const NavigationContainer = styled.header`
   background-color: #1fdf64;
   padding: 1rem 4rem;
   border-bottom: 2px solid #063823;
+  position: sticky;
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
   @media (max-width: 500px) {
     width: 100vw;
