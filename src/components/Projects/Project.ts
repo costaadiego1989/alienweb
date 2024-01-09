@@ -8,7 +8,7 @@ export const ProjectsContainer = styled.section`
 `;
 
 export const ProjectsContentContainer = styled.section`
-    width: 91vw;
+    width: 90vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: auto;
@@ -40,7 +40,7 @@ export const ProjectContainer = styled.ul`
 
 export const Project = styled.li`
     background-color: #1fdf64 !important;
-    border: 3px solid #1fdf64;
+    box-shadow: inset 0 0 0 5px #1fdf64;
     border-radius: 0.5rem;
     transition: .5s;
     cursor: pointer;
