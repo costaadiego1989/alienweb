@@ -8,7 +8,7 @@ export const ProjectsContainer = styled.section`
 `;
 
 export const ProjectsContentContainer = styled.section`
-    width: 90vw;
+    width: 80vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: auto;
