@@ -65,7 +65,7 @@ export const Navigation: React.FC = () => {
                 offset={-70}
                 duration={500}
               >
-                <Linked>{menuItem.index}. {menuItem.title}</Linked>
+                <Linked>{menuItem.index} {menuItem.title}</Linked>
               </Link>
             </>)
           })}
