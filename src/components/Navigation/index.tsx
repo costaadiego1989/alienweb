@@ -15,10 +15,10 @@ interface IMenuItensProps {
 export const Navigation: React.FC = () => {
 
   const menuItens: IMenuItensProps[] = [
-    { index: "1", title: "Sobre", url: 'about' },
-    { index: "2", title: "Portfólio", url: 'portfolio' },
-    { index: "3", title: "Experiência", url: 'experiency' },
-    { index: "4", title: "Contato", url: 'contact' },
+    { index: "I", title: "Sobre", url: 'about' },
+    { index: "II", title: "Portfólio", url: 'portfolio' },
+    { index: "III", title: "Experiência", url: 'experiency' },
+    { index: "VI", title: "Contato", url: 'contact' },
   ];
 
   const handleCVDonwload = () => {
