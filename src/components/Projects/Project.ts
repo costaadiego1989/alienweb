@@ -14,10 +14,6 @@ export const ProjectsContentContainer = styled.section`
     grid-template-rows: auto;
     margin: 0 auto;
     gap: 1rem;
-
-    @media (max-width: 500px) {
-        width: 88vw;
-    }
 `;
 
 export const ProjectTitle = styled.h3`

@@ -16,8 +16,8 @@ export const Navigation: React.FC = () => {
 
   const menuItens: IMenuItensProps[] = [
     { index: "1", title: "Sobre", url: 'about' },
-    { index: "3", title: "Portfólio", url: 'portfolio' },
-    { index: "2", title: "Experiência", url: 'experiency' },
+    { index: "2", title: "Portfólio", url: 'portfolio' },
+    { index: "3", title: "Experiência", url: 'experiency' },
     { index: "4", title: "Contato", url: 'contact' },
   ];
 
