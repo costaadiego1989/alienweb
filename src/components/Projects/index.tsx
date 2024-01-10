@@ -9,9 +9,9 @@ export const Projects: React.FC = () => {
             <ProjectTitle>Projetos</ProjectTitle>
             <ProjectsContentContainer>
                 <ProjectContainer>
-                    {projects.map((project) => {
+                    {projects.map((project, index) => {
                         return (<>
-                            <Project>
+                            <Project key={index}>
                                 <img src={project.imageUrl} alt={project.title} />
                                 <h3>
                                     <Globe size={24} />

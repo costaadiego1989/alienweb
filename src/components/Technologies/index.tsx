@@ -42,7 +42,7 @@ export const Technologies: React.FC = () => {
       <TechnologiesContent>
         {technologiesList.map((technologie: ITechnologiesProps): React.ReactElement => {
           return (
-            <Technologie>
+            <Technologie key={technologie.title}>
               {technologie.icon}
               {technologie.title}
             </Technologie>
