@@ -32,6 +32,10 @@ export const LeftContent = styled.section`
     background-color: #1fdf64;
     padding: 4rem 4rem 6rem 4rem;
     text-align: center;
+
+    @media (max-width: 500px) {
+      padding: 4rem 2rem 6rem 2rem;
+    }
 `;
 
 export const RightContent = styled.section`
