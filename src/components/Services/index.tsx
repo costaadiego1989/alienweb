@@ -17,7 +17,7 @@ export const Services: React.FC = () => {
                 </>);
               })}  
             </ServicesContentContainer>
-            <CallToAction title="Vamos conhecer um pouco mais sobre nosso serviços" button="Vamos bater um papo!" />
+            <CallToAction title="Vamos conhecer um pouco mais sobre nosso serviços" button="Vamos bater um papo!" url='https://wa.me/5521993001883' />
         </ServicesContainer>
     </>)
 }

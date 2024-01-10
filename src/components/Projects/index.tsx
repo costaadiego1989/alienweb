@@ -1,7 +1,7 @@
 import { CallToAction } from '../CallToAction';
 import { ProjectsContainer, ProjectsContentContainer, ProjectTitle, ProjectContainer, Project } from './Project'
 import { projects } from './mock';
-import { Buildings, Globe, } from "phosphor-react";
+import { Buildings, Globe, } from 'phosphor-react';
 
 export const Projects: React.FC = () => {
     return (<>
@@ -25,7 +25,7 @@ export const Projects: React.FC = () => {
                     })}
                 </ProjectContainer>
             </ProjectsContentContainer>
-            <CallToAction title="Você merece estar em nosso case de sucesso" button="Vamos bater um papo!"  />
+            <CallToAction title='Você merece estar em nosso case de sucesso' button='Vamos bater um papo!' url='https://wa.me/5521993001883' />
         </ProjectsContainer>
     </>);
 }
