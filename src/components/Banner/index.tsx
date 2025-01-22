@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
       </WelcomeContainer>
 
       <BannerTitle>
-        Sou o Dev na <BannerTitleContrast>Alienweb</BannerTitleContrast>{" "}
+        Sou Dev <BannerTitleContrast>Fullstack Web3</BannerTitleContrast>{" "}
         estou em constante <BannerTitleContrast>aprendizado</BannerTitleContrast>{" "}
         e <BannerTitleContrast>metamorfose</BannerTitleContrast>.
       </BannerTitle>
