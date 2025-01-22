@@ -6,7 +6,7 @@ import {
   AboutmeText,
   AboutmeTitle,
 } from "./Aboutme";
-import AboutmePhoto from "../../assets/images/aboutme.png";
+import AboutmePhoto from "../../assets/images/me.jpg";
 
 export const Aboutme = () => {
   return (
@@ -18,7 +18,7 @@ export const Aboutme = () => {
 
           <AboutmeText>
 
-            <AboutmeTitle>Quem sou</AboutmeTitle>
+            <AboutmeTitle>Quem sou eu</AboutmeTitle>
 
             <p>
 

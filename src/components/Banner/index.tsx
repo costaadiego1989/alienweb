@@ -32,7 +32,7 @@ export const Header: React.FC = () => {
     { title: "Github", icon: <GithubLogo />, url: 'https://github.com/costaadiego1989' },
     { title: "Linkedin", icon: <LinkedinLogo />, url: 'https://linkedin.com/in/costaadiego' },
     { title: "Whatsapp", icon: <WhatsappLogo />, url: 'https://wa.me/5521993001883' },
-    { title: "Envelope", icon: <Envelope />, url: 'mailto:agenciaalienweb@gmail.com' },
+    { title: "Envelope", icon: <Envelope />, url: 'mailto:costaadiego1989@gmail.com' },
   ];
 
   return (
@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
       </WelcomeContainer>
 
       <BannerTitle>
-        Sou o CTO da <BannerTitleContrast>Alienweb</BannerTitleContrast>{" "}
+        Sou o Dev na <BannerTitleContrast>Alienweb</BannerTitleContrast>{" "}
         estou em constante <BannerTitleContrast>aprendizado</BannerTitleContrast>{" "}
         e <BannerTitleContrast>metamorfose</BannerTitleContrast>.
       </BannerTitle>
@@ -54,7 +54,7 @@ export const Header: React.FC = () => {
           <p>
             Sou um ser viajante que navega pelo espaço em busca de novas aventuras
             e desafios. Meus conhecimentos como desenvolvedor Full Stack React e
-            Node.js com TypeScript são minhas principais ferramentas nesta
+            Node.js com TypeScript e Web3 EVM e Bitcoin são minhas principais ferramentas nesta
             jornada. Aqui você poderá conhecer sobre mim e meus projetos
             interestelares. Fique à vontade para explorar este cantinho do
             universo e quem sabe, juntos, podemos criar algo incrível!
