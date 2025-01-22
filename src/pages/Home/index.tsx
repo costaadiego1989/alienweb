@@ -14,9 +14,9 @@ export const Home = () => {
       <Header />
       <Services />
       <Aboutme />
+      <Technologies />
       <Projects />
       <Companys />
-      <Technologies />
       <Contact />
     </>
   );
